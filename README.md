@@ -26,29 +26,31 @@ Analysis
 
 Let’s take a look at the general information of the dataset:
 
-![Screenshot 2024-08-12 134828](https://github.com/user-attachments/assets/8e57e8cf-3e50-4452-96eb-a73f2d936bf7)
+![Screenshot 2024-08-12 140339](https://github.com/user-attachments/assets/0002ef8d-ac0f-4603-aa02-0bfcf1e107d6)
+
+![Screenshot 2024-08-12 140430](https://github.com/user-attachments/assets/557aea94-a02a-42b9-876f-3d40dbd822e6)
 
 After having an overview of the dataset, I noticed that the customerID is having the wrong data type and the UnitPrice has a minimum value that is negative. Therefore, I have filtered the data as follows:
 
-![Screenshot 2024-08-12 134912](https://github.com/user-attachments/assets/eb0806bc-797f-42f4-a575-53b7ec14ba29)
+![Screenshot 2024-08-12 140603](https://github.com/user-attachments/assets/2d396dfd-6a0d-4566-979e-fb0b62364322)
 
 Next, I calculated the RFM metrics. Based on the date information in the dataset, I have chosen the current date to be calculated as 31/12/2011.
 
-![Screenshot 2024-08-12 135059](https://github.com/user-attachments/assets/d48f6964-7839-44bc-8e78-114679f21d8c)
+![Screenshot 2024-08-12 140718](https://github.com/user-attachments/assets/c2dc7bf6-48cb-4940-95a7-dd8213107d57)
 
 Then I assigned quintiles for each RFM score. It is preferable for both frequency and monetary value if the value is high. A low recency value is seen as preferable.
 
-![Screenshot 2024-08-12 135139](https://github.com/user-attachments/assets/34d345f2-9387-445d-a2bb-bad3ef6d60e8)
+![Screenshot 2024-08-12 140834](https://github.com/user-attachments/assets/515d1923-aeb1-4ef4-8214-b49efc36b9ef)
 
 Based on the RFM score value, I divided the client base into a smaller number of identified parts.
 
-![Screenshot 2024-08-12 135218](https://github.com/user-attachments/assets/c2a1f2b5-74cd-4bef-90aa-49299faa1848)
+![Screenshot 2024-08-12 140936](https://github.com/user-attachments/assets/f38cde28-153d-4816-8010-e7d1c6152633)
 
 I have combined the 2 tables RFM and segment_score together to produce the final result that displays the segment corresponding to the RFM score.
 
-![Screenshot 2024-08-12 135309](https://github.com/user-attachments/assets/63ca010a-cc34-401f-84dc-17bf018f4795)
+![Screenshot 2024-08-12 141020](https://github.com/user-attachments/assets/3c0fd8fd-331a-4e86-b806-4c19677facd0)
 
-![Screenshot 2024-08-12 135340](https://github.com/user-attachments/assets/378a453f-ac30-4cb2-aedf-ab9d26cba127)
+![Screenshot 2024-08-12 141054](https://github.com/user-attachments/assets/5a1cd46b-8f9d-4529-b8ea-f105ba81fd71)
 
 In the segment file, based on the RFM scores, the customers are divided into 11 groups: Champions, Loyal, Potential Loyalist, New Customers, Promising, Need Attention, About To Sleep, At Risk, Cannot Lose Them, Hibernating Customers and Lost Customers.
 
@@ -76,19 +78,19 @@ Lost Customers – Completely disengaged, will require significant effort to win
 
 To know more information, I calculated the number of customers in each segment.
 
-![Screenshot 2024-08-12 135552](https://github.com/user-attachments/assets/8c6cd5c6-ee56-4134-8362-7f80c7c727ef)
+![Screenshot 2024-08-12 141139](https://github.com/user-attachments/assets/18109eab-60a3-493c-abba-f2e6449b5ef5)
 
 I created the “RFM Customer Segments by Value” chart to get an overall view of the quantities of each customer segment.
 
-![Screenshot 2024-08-12 135647](https://github.com/user-attachments/assets/7b5acf8b-00bb-40fa-ab2a-93fc8a7fec75)
+![Screenshot 2024-08-12 141219](https://github.com/user-attachments/assets/c724e9b1-52dc-4d5e-84b5-c715233b5626)
 
 Champions, are the most valuable and engaged customers. They have the highest Recency, Frequency, and Monetary (RFM) scores, indicating they make frequent purchases, have a high total spend, and have made a purchase very recently. These customers should be prioritized and provided with exceptional service to maintain their loyalty. I have noticed that the Champions customers account for around 18%, which is a relatively high number.
 
-![Screenshot 2024-08-12 135733](https://github.com/user-attachments/assets/b9bc2727-d994-4add-83ad-6e961b03164f)
+![Screenshot 2024-08-12 141249](https://github.com/user-attachments/assets/34c8f880-b29f-4c1d-a15b-fba10ef86a7e)
 
 To visualize the correlation matrix of the RFM (Recency, Frequency, Monetary) values within the Champions segment of customers, I created a heatmap:
 
-![Screenshot 2024-08-12 135815](https://github.com/user-attachments/assets/58b6887d-3389-4267-ae9c-c380e91775b4)
+![Screenshot 2024-08-12 141322](https://github.com/user-attachments/assets/2f507d17-7bb2-4eec-af62-274794c7c6db)
 
 From this heatmap, we can see that: the r_score (Recency) has a strong positive correlation with the f_score (Frequency) and m_score (Monetary), the f_score and m_score also have a fairly strong positive correlation with each other.
 
