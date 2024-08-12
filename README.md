@@ -1,5 +1,5 @@
 # RFM-Analysis-For-Customer-Segment
-I used the RFM model and Python to group customers, thus providing the right solutions and suggestions to develop the right customer development strategy.
+Using RFM model and Python to group customers, thus providing the right solutions and suggestions to develop the right customer development strategy.
 # Situation
 A global retail company have a lot of customers. At the end of the year, the marketing department wants to run marketing campaigns to thank customers who have supported the company over the years. As well as exploiting potential customers to become loyal customers. However, the marketing department has not been able to group each customer this year because the data set is so large that it cannot be hand-processed as in previous years, so use the data analysis department to support the implementation of a segment classification of each customer to implement each marketing program to suit each customer group.
 # Task
