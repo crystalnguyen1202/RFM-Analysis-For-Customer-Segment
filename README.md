@@ -22,7 +22,7 @@ The key idea behind RFM analysis is that customers who have recently made large,
 RFM analysis is a powerful tool for understanding and leveraging customer behavior, as it allows businesses to identify their most valuable customers and develop more effective marketing campaigns.
 Analysis
 
-![Screenshot 2024-08-12 134600](https://github.com/user-attachments/assets/96e39cbc-a189-449a-98f8-5a34c2cefb55)
+![Screenshot 2024-08-12 140230](https://github.com/user-attachments/assets/76306266-c8f6-4595-b412-b57f0a4a1413)
 
 Let’s take a look at the general information of the dataset:
 
